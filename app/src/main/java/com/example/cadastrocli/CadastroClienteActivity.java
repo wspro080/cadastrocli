@@ -45,7 +45,7 @@ public class CadastroClienteActivity extends AppCompatActivity {
     public void Cadastrar(View view) {
 
         if (cliente == null){
-        Cliente cliente = new Cliente();
+        cliente = new Cliente();
         cliente.setNome(nome.getText().toString());
         cliente.setCpf(cpf.getText().toString());
         cliente.setEndereco(endereco.getText().toString());

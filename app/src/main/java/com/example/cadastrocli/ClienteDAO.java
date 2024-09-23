@@ -54,7 +54,7 @@ public class ClienteDAO {
         values.put("cpf", cliente.getCpf());
         values.put("endereco", cliente.getEndereco());
         values.put("telefone", cliente.getTelefone());
-        banco.update("aluno",values, "id ?",
+        banco.update("cliente",values, "id = ?",
                 new String[]{cliente.getId().toString()});
     }
 }
